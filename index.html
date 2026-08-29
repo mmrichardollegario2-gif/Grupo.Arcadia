@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Grupo Arcádia — inovação, tecnologia, estratégia e resultados." />
+  <title>Grupo Arcádia</title>
+  <link rel="icon" href="assets/logo-symbol.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#inicio" aria-label="Grupo Arcádia">
+      <img src="assets/logo-main.jpg" alt="Logo Grupo Arcádia" />
+    </a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#divisoes">Divisões</a>
+      <a href="#projeto">Projeto</a>
+    </nav>
+    <a class="nav-cta" href="#contato">Contato <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">GRUPO ARCADIA</p>
+        <h1>Transformamos<br><em>ideias</em> em legado.</h1>
+        <p class="hero-text">Estratégia, tecnologia e criatividade reunidas para construir projetos que não existem apenas para o presente.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#divisoes">Conheça a Arcádia <span>→</span></a>
+          <a class="button ghost" href="#projeto">Ver projeto <span>↘</span></a>
+        </div>
+        <div class="hero-line"></div>
+        <div class="hero-note"><span class="dot"></span> INOVAÇÃO • TECNOLOGIA • ESTRATÉGIA</div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="halo"></div>
+        <img class="hero-logo" src="assets/logo-symbol.jpg" alt="Símbolo Arcádia" />
+        <div class="glass-image">
+          <img src="assets/marketing.jpg" alt="Visual de marketing e estratégia" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="section-head">
+        <p class="eyebrow">NOSSA VISÃO</p>
+        <h2>Uma ideia só vale o seu tamanho quando encontra coragem para crescer.</h2>
+      </div>
+      <div class="about-grid">
+        <p>O Grupo Arcádia une diferentes áreas em uma única direção: transformar visão em construção. Cada divisão possui sua própria especialidade, mas todas compartilham o mesmo objetivo.</p>
+        <div class="quote-card">
+          <span class="quote-mark">“</span>
+          <p>O céu não é o limite. É apenas o começo.</p>
+          <span class="quote-tag">GRUPO ARCADIA</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="divisions" id="divisoes">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">EXPERTISE</p>
+          <h2>Três divisões.<br>Uma direção.</h2>
+        </div>
+        <p>Áreas diferentes, conectadas por inovação e pela ambição de criar algo que permaneça.</p>
+      </div>
+
+      <div class="division-grid">
+        <article class="division-card">
+          <img src="assets/marketing.jpg" alt="Marketing e estratégia" />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span>01</span>
+            <h3>Marketing &amp;<br>Sistemas</h3>
+            <p>Estratégia, presença digital e soluções inteligentes.</p>
+          </div>
+        </article>
+
+        <article class="division-card">
+          <img src="assets/code.jpg" alt="Desenvolvimento de software e tecnologia" />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span>02</span>
+            <h3>Desenvolvimento<br>de Sites</h3>
+            <p>Experiências digitais modernas, funcionais e marcantes.</p>
+          </div>
+        </article>
+
+        <article class="division-card">
+          <img src="assets/study-tech.jpg" alt="Tecnologia e desenvolvimento de projetos" />
+          <div class="card-overlay"></div>
+          <div class="card-content">
+            <span>03</span>
+            <h3>Game<br>Development</h3>
+            <p>Universos, mecânicas e experiências construídas do zero.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="project" id="projeto">
+      <div class="project-copy">
+        <p class="eyebrow">EM MOVIMENTO</p>
+        <h2>Ideias grandes<br>começam pequenas.</h2>
+        <p>Visualize a evolução do projeto Arcádia em um painel inspirado no mercado. Os dados abaixo são demonstrativos e podem ser conectados futuramente a uma base de dados real.</p>
+        <div class="mini-stats">
+          <div><strong>R$ 9,90</strong><span>Valor inicial de referência</span></div>
+          <div><strong>LIVE</strong><span>Painel preparado para dados</span></div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-top">
+          <div>
+            <span class="chart-label">ARCADIA / BRL</span>
+            <strong>R$ <span id="price">9,90</span></strong>
+          </div>
+          <span class="status"><i></i> DADOS DEMONSTRATIVOS</span>
+        </div>
+        <div class="chart-area">
+          <svg id="stockChart" viewBox="0 0 700 300" preserveAspectRatio="none" aria-label="Gráfico demonstrativo de evolução">
+            <defs>
+              <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#d6a94f" stop-opacity=".34"/>
+                <stop offset="100%" stop-color="#d6a94f" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g class="grid-lines">
+              <line x1="0" y1="40" x2="700" y2="40"/><line x1="0" y1="100" x2="700" y2="100"/>
+              <line x1="0" y1="160" x2="700" y2="160"/><line x1="0" y1="220" x2="700" y2="220"/>
+            </g>
+            <path id="areaPath" fill="url(#areaFill)"></path>
+            <path id="linePath" fill="none"></path>
+            <circle id="lastDot" r="6"></circle>
+          </svg>
+        </div>
+        <div class="chart-bottom">
+          <span>SEMANA 01</span><span>SEMANA 02</span><span>SEMANA 03</span><span>SEMANA 04</span><span>ATUAL</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="statement-glow"></div>
+      <p class="eyebrow">NOSSO PRINCÍPIO</p>
+      <h2>Não construímos apenas projetos.<br><span>Construímos possibilidades.</span></h2>
+      <img src="assets/logo-symbol.jpg" alt="" />
+    </section>
+
+    <section class="contact" id="contato">
+      <div>
+        <p class="eyebrow">PRÓXIMO PASSO</p>
+        <h2>O futuro começa<br>com uma ideia.</h2>
+      </div>
+      <a href="mailto:contato@arcadia.com" class="button primary">Entrar em contato <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/logo-main.jpg" alt="Grupo Arcádia" />
+      <p>INOVAÇÃO • TECNOLOGIA • ESTRATÉGIA • RESULTADOS</p>
+    </div>
+    <div class="footer-links">
+      <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#divisoes">Divisões</a><a href="#projeto">Projeto</a>
+    </div>
+    <small>© <span id="year"></span> Grupo Arcádia. Todos os direitos reservados.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
